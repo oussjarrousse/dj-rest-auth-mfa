@@ -15,7 +15,7 @@ setup(
     install_requires=
     [
         "Django>=4.1.7",
-        "djangorestframework>3.14.0", 
+        "djangorestframework>=3.14.0", 
         "djangorestframework-simplejwt", 
         "django-cors-headers",
         "dj-rest-auth",
@@ -30,7 +30,7 @@ setup(
     long_description=open("README.md", "r", encoding="utf-8").read(),
     keywords="Django REST allauth dj-rest-auth mfa totp 2fa authentication otp",
     extras_require={"dev": ["pre-commit", "tox"]},
-    version="0.0.1",
+    version="0.0.2",
     long_description_content_type="text/markdown",
     classifiers=[
         "Framework :: Pytest",

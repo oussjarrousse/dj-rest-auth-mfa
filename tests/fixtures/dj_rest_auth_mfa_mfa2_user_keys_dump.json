@@ -1,0 +1,32 @@
+[
+    {
+        "username": "user",
+        "properties": {
+            "secret_keys": [
+                "pbkdf2_sha256_custom$720000$pVebxgh2FB5w0V1$c0nDcSFCkV8L0QKPukbjfO5MM+t6Up9votY1tbBylV8=",
+                "pbkdf2_sha256_custom$720000$pVebxgh2FB5w0V1$MxJS4Oapq7Akxt5tqC4I/Wgak6fXOhqtIMaAR+rBQ6Y=",
+                "pbkdf2_sha256_custom$720000$pVebxgh2FB5w0V1$wNPI68tYYH5cRuqTvR2sTzuh/sZGKOr4nyOryMm4GgQ=",
+                "pbkdf2_sha256_custom$720000$pVebxgh2FB5w0V1$larMYvg7GK+MdQVKsN15o7esbKQNeUjkyvB+qgpIrlk="
+            ],
+            "salt": "pVebxgh2FB5w0V1"
+        },
+        "added_on": "2024-01-07T14:15:08.263515Z",
+        "key_type": "RECOVERY",
+        "enabled": true,
+        "expires": null,
+        "last_used": "2024-01-07T14:15:40.174868Z",
+        "owned_by_enterprise": null
+    },
+    {
+        "username": "user",
+        "properties": {
+            "secret_key": "IAO2QZ5ZWI4V4JSG3P22I4FOOU5T73HF"
+        },
+        "added_on": "2024-01-03T23:49:11.953750Z",
+        "key_type": "TOTP",
+        "enabled": true,
+        "expires": null,
+        "last_used": "2024-01-07T14:14:41.686340Z",
+        "owned_by_enterprise": null
+    }
+]

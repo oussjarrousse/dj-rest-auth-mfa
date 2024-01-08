@@ -17,6 +17,7 @@ setup(
         "Django>=4.1.7",
         "djangorestframework>3.14.0", 
         "djangorestframework-simplejwt", 
+        "django-cors-headers",
         "dj-rest-auth",
         "django-allauth==0.57.0",
         "django-mfa2"

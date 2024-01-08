@@ -1,0 +1,7 @@
+wheel
+djangorestframework>=3.14.0
+djangorestframework-simplejwt
+dj-rest-auth
+django-allauth==0.57.0
+django-mfa2
+icecream

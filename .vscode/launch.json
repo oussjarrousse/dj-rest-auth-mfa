@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/manage.py",
+            "args": [
+                "runserver",
+                "--noreload"
+            ],
+            "django": true,
+            "justMyCode": false,
+            "env": {"LOAD_DOTENV_FOR_DYNACONF": "true"}
+        },
+        {
+            "type": "python",
+            "request": "attach",
+            "name": "Docker: Attach to Python",
+            // https://code.visualstudio.com/docs/containers/quickstart-python
+            "port": 5671,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/root"
+                }
+            ],
+            "justMyCode": false,
+            "django": true
+        },
+        {
+            "name": "Python: Debug Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "justMyCode": false,
+            "env": {"PYTEST_ADDOPTS": "--no-cov"},
+            "purpose": ["debug-test"]
+        }
+    ]
+}

@@ -38,8 +38,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR ,'mfa','templates' ),
-            os.path.join(BASE_DIR ,'tests','templates' )
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -74,7 +72,7 @@ MFA_LOGIN_CALLBACK = (
 )
 MFA_RECHECK = True  # Allow random rechecking of the user
 MFA_REDIRECT_AFTER_REGISTRATION = (
-    "mfa_home"  # Allows Changing the page after successful registeration
+    "home"  # Allows Changing the page after successful registeration
 )
 MFA_SUCCESS_REGISTRATION_MSG = "Go to Security Home"  # The text of the link
 MFA_RECHECK_MIN = 10  # Minimum interval in seconds
@@ -86,7 +84,7 @@ MFA_RENAME_METHODS = (
 )  # Rename the methods in a more user-friendly way e.g {"RECOVERY":"Backup Codes"} (Added in 2.6.0)
 MFA_HIDE_DISABLE = ("FIDO2",)  # Can the user disable his key (Added in 1.2.0).
 MFA_OWNED_BY_ENTERPRISE = False  # Who owns security keys
-MFA_ENFORCE_RECOVERY_METHOD = True  # ?
+MFA_ENFORCE_RECOVERY_METHOD = True  # 
 PASSWORD_HASHERS = DEFAULT_PASSWORD_HASHERS  # Comment if PASSWORD_HASHER already set in your settings.py
 PASSWORD_HASHERS += ["mfa.recovery.Hash"]
 RECOVERY_ITERATION = 720000  # Number of iteration for recovery code, higher is more secure, but uses more resources for generation and check...

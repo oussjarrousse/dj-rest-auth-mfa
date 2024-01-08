@@ -28,6 +28,9 @@ MANIFEST
 *.egg-info/
 build
 
+# pypi
+dist
+
 #Jupyter
 
 #django
@@ -44,7 +47,3 @@ config/.secrets.yaml
 #tox
 .tox
 
-# dbs
-test.db.sqlite3
-dev.db.sqlite3
-prod.db.sqlite3

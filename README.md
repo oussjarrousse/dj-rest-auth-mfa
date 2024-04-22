@@ -2,11 +2,17 @@
 
 ## Overview
 
-`dj-rest-auth-mfa` is a Django App that is actually a plugin for the `dj-rest-auth` that adds mfa support to email/username accounts, by using the `django-mfa2` package.
+`dj-rest-auth-mfa` is a Django App that is actually a plugin for the `dj-rest-auth`. It adds RESTful API endpoints that adds multifactor authentication (MFA) support to accounts by using the `django-mfa2` package.
 
 ## Requirements:
 
-Make sure the requirements for `django-allauth`, `dj-rest-auth` and `django-mfa2` are met
+Besides Django, this package depends on three other projects:
+- [django-allauth](https://allauth.org/) that provides advanced authentication functionality to the Django framework.
+- [django-rest-framework](https://django-rest-framework.org), DRF, that provides an extendible and flexible way to build Web APIs on top of Django
+- [dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/introduction.html) provides RESTful API endpoints for the django-allauth using DRF (zdjango-allauth` does not provide API support out of the box [yet](https://allauth.org/news/2024/04/api-feedback/).)
+- [django-mfa2](https://github.com/mkalioby/django-mfa2) which is a Django app that adds supports for TOTP, U2F, FIDO2 U2F (Web Authn), Email Tokens, Trusted Devices, backup codes, and Passkeys. (`django-allauth` only supports TOTP out of the box.)
+
+To use the package effectively, make sure the requirements for `django-allauth`, `django-rest-framework`, `dj-rest-auth` and `django-mfa2` are met.
 
 ## Installation
 

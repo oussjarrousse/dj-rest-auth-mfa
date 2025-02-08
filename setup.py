@@ -22,7 +22,7 @@ setup(
         "django-allauth==0.57.0",
         "django-mfa2"
     ],
-    url="https://github.com/oussjarrousse/dj-rest-auth-saml",
+    url="https://github.com/oussjarrousse/dj-rest-auth-mfa",
     license="MIT",
     author="Oussama Jarrousse",
     author_email="oussama@jarrousse.org",

@@ -22,7 +22,7 @@ setup(
         "django-allauth==0.57.0",
         "django-mfa2"
     ],
-    url="https://github.com/oussjarrousse/dj-rest-auth-saml",
+    url="https://github.com/oussjarrousse/dj-rest-auth-mfa",
     license="MIT",
     author="Oussama Jarrousse",
     author_email="oussama@jarrousse.org",
@@ -30,7 +30,7 @@ setup(
     long_description=open("README.md", "r", encoding="utf-8").read(),
     keywords="Django REST allauth dj-rest-auth mfa totp 2fa authentication otp",
     extras_require={"dev": ["pre-commit", "tox"]},
-    version="0.0.2",
+    version="0.0.3",
     long_description_content_type="text/markdown",
     classifiers=[
         "Framework :: Pytest",

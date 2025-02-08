@@ -6,11 +6,11 @@
 
 ## Requirements:
 
-Make sure the requirements for `django-allauth`, `dj-rest-auth` and `django-mfa2` are met
+Make sure the requirements for `django-allauth`, `dj-rest-auth` and `django-mfa2` are met.
 
 ## Installation
 
-To install `dj-rest-auth-mfa ` run:
+To install `dj-rest-auth-mfa` run:
 
 ```bash
 pip install dj-rest-auth-mfa
@@ -21,6 +21,10 @@ In the settings.py you should have the following:
 ```pytest
 INSTALLED_APPS = [
     # ...
+    "django.contrib.auth",
+    "django.contrib.admin",
+    "django.contrib.sites",
+    # ...
     "corsheaders",
     "rest_framework",
     "rest_framework.authtoken",
@@ -30,6 +34,8 @@ INSTALLED_APPS = [
     "dj_rest_auth_mfa"  # this package
 ]
 
+# https://docs.djangoproject.com/en/4.2/ref/contrib/sites/
+SITE_ID = 1
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",

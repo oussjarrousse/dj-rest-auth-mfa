@@ -22,7 +22,7 @@ class Tests_MFALoginSerializer:
 
         factory = APIRequestFactory()
         totp_token = totp.now()
-        request = factory.post("/api/v1/core/info/", {"token": totp_token})
+        request = factory.get("/api/v1/core/info/", {"token": totp_token})
         # force_authenticate(request, user)
         # unauthenticated_api_client.force_login(user)
         client = unauthenticated_api_client
